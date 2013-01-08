@@ -1,0 +1,7 @@
+# Japanese strings go here for Rails i18n
+ja:
+  field_default_assignee: "デフォルトの担当者"
+  default_assign_text_settings: "設定"
+  default_assign_settings_help: "新しいプロジェクトのデフォルトの担当者"
+  label_user: "ユーザー"
+
