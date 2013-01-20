@@ -1,0 +1,7 @@
+# German strings go here for Rails i18n
+de:
+  field_default_assignee: "Standard Verantwortlicher"
+  default_assign_text_settings: "Optionen"
+  default_assign_settings_help: "Standard Verantwortlicher für neue Projekte"
+  label_user: "Benutzer"
+
