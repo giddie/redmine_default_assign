@@ -6,7 +6,7 @@
     <%= content_tag(:label, l(:label_user)) %>
 
     <%-
-      users = User.active(:order => "firstname ASC")
+      users = User.active.order("firstname ASC")
       selected = @settings['default_assignee_id'] unless @settings['default_assignee_id'].blank?
       selected ||= []
     -%>
