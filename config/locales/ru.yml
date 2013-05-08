@@ -1,0 +1,7 @@
+# Russian strings go here for Rails i18n
+ru:
+  field_default_assignee: "Назначать по умолчанию"
+  default_assign_text_settings: "Настройки"
+  default_assign_settings_help: "Для новых проектов назначать по умолчанию"
+  label_user: "Пользователь"
+
