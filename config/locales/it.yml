@@ -1,0 +1,15 @@
+# Italian strings go here for Rails i18n
+it:
+  field_default_assignee: "Assegnatario di default"
+  default_assign_text_settings: "Opzioni"
+  default_assign_settings_help: "Assegnatario di default per i nuovi progetti"
+  interactive_assignment_explanation: >
+    Alla creazione di una nuova segnalazione, il plugin può popolare il campo 
+    Assegnato a con l'assegnatario di default scelto sopra, in modo che sia 
+    visibile ancor prima che la segnalazione venga creata. Tuttavia, quando si
+    cambiano alcuni campi, il form è ricaricato e l'assegnatario di default
+    viene ricalcolato. Questo potrebbe essere un comportamento desiderato o no, 
+    quindi è un'opzione a scelta:
+  interactive_assignment: "Imposta l'assegnatario in maniera interattiva"
+  label_user: "Utente"
+
