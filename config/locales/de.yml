@@ -4,11 +4,10 @@ de:
   default_assign_text_settings: "Optionen"
   default_assign_settings_help: "Standard Verantwortlicher für neue Projekte"
   interactive_assignment_explanation: >
-    When creating a new issue, the plugin can populate the assignee with the
-    default assignee you've chosen above, so that it'll be visible even before
-    you've created the issue. However, when you change certain fields, the form
-    is reloaded and the default assignee is recalculated. This might be what you
-    want, or it might be undesirable, so you can make the choice yourself:
-  interactive_assignment: "Set Assignee Interactively"
+    Beim anlegen eines nuen Tickets, kann das Plugin den oben ausgewählten Benutzer automatisch auswählen,
+    auf diese Weise ist der zuständige Benutzer bereit vor dem Speichern sichtbar.
+    Sollten Sie den Wert eines Feldes ändern, wird das Formular neu angezeigt und der zuständige Benutzer 
+    erneut bechnet. Sollte dieses Verhalten nicht erwünscht sein, können Sie es hier ändern:
+  interactive_assignment: "Zuständigen interaktiv setzen"
   label_user: "Benutzer"
-  none_selected: "<None>"
+  none_selected: "<Keiner>"
