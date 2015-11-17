@@ -13,3 +13,6 @@ it:
   interactive_assignment: "Imposta l'assegnatario in maniera interattiva"
   label_user: "Utente"
   none_selected: "<Nessuno>"
+  self_assignment: "Assign 'self'"
+  self_assignment_explanation: >
+      Assign issue 'self' if no default assignee is selected.

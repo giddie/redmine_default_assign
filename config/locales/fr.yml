@@ -1,5 +1,5 @@
 # French strings go here for Rails i18n
-fr:
+en:
   field_default_assignee: "Assignement par defaut"
   default_assign_text_settings: "Options"
   default_assign_settings_help: "Assignement par defaut pour les nouveaux projets"
@@ -13,3 +13,6 @@ fr:
     vous pouvez faire le choix vous-même:
   label_user: "Utilisateur"
   none_selected: "<Aucun>"
+  self_assignment: "Assign 'self'"
+  self_assignment_explanation: >
+      Assign issue 'self' if no default assignee is selected.
