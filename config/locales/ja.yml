@@ -12,3 +12,6 @@ ja:
   interactive_assignment: "Set Assignee Interactively"
   label_user: "ユーザー"
   none_selected: "<None>"
+  self_assignment: "Assign 'self'"
+  self_assignment_explanation: >
+      Assign issue 'self' if no default assignee is selected.

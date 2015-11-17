@@ -4,11 +4,14 @@ ru:
   default_assign_text_settings: "Настройки"
   default_assign_settings_help: "Для новых проектов назначать по умолчанию"
   interactive_assignment_explanation: >
-    При созднии новой задачи, плагин автоматически может назначить ответственного, выбранного выше. 
-    Таким образом ответственный будет виден в том числе до того как задача будет создана. 
-    Однако, при изменении некоторых полей, форма может быть перезагружена и 
-    ответственный по умолчанию переназначается. Такое поведение может быть приемлимым,
-    либо нежелательным. Выбор за вами:
-  interactive_assignment: "Выбирать ответственного интерактивно"
+    When creating a new issue, the plugin can populate the assignee with the
+    default assignee you've chosen above, so that it'll be visible even before
+    you've created the issue. However, when you change certain fields, the form
+    is reloaded and the default assignee is recalculated. This might be what you
+    want, or it might be undesirable, so you can make the choice yourself:
+  interactive_assignment: "Set Assignee Interactively"
   label_user: "Пользователь"
-  none_selected: "<Пусто>"
+  none_selected: "<None>"
+  self_assignment: "Назначать 'мне'"
+  self_assignment_explanation: >
+      Назначать тикет 'мне', если не выбрано значение по умолчанию.

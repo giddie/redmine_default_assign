@@ -39,4 +39,17 @@
    <%= hidden_field_tag('settings[interactive_assignment]', false) %>
    <%= check_box_tag('settings[interactive_assignment]', true, interactive_assignment) %>
  </p>
+ 
+ <p><%= l(:self_assignment_explanation) %></p>
+ <p>
+   <%= label('settings[self_assignment]', l(:self_assignment)) %>
+   <%-
+     self_assignment = @settings['self_assignment'] || 'true'
+     self_assignment = (self_assignment == 'true')
+   -%>
+   <%= hidden_field_tag('settings[self_assignment]', false) %>
+   <%= check_box_tag('settings[self_assignment]', true, self_assignment) %>
+ </p>
+
 </fieldset>
+

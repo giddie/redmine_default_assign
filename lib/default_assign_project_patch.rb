@@ -8,7 +8,7 @@ module DefaultAssignProjectPatch
 
       safe_attributes :default_assignee_id
       belongs_to :default_assignee, :class_name => "Principal"
-      before_create :set_default_assignee
+      before_save :set_default_assignee
     end
   end
 
@@ -16,9 +16,11 @@ module DefaultAssignProjectPatch
   #end
 
   module InstanceMethods
-    def set_default_assignee
-      self.default_assignee_id ||=
-        Setting.plugin_redmine_default_assign['default_assignee_id']
+    def set_default_assignee 
+      if not self.persisted?
+        self.default_assignee_id ||=
+          Setting.plugin_redmine_default_assign['default_assignee_id']
+      end
     end
   end
 end

@@ -14,6 +14,15 @@ class DefaultAssignIssueHook < Redmine::Hook::ViewListener
       if context[:project].assignable_users.include?(default_assignee)
         context[:issue].assigned_to_id = default_assignee.id
       end
+    else
+      self_assignment =
+        Setting.plugin_redmine_default_assign['self_assignment'] || 'true'
+      self_assignment = (self_assignment == 'true')
+      if self_assignment
+	if context[:project].assignable_users.include?(User.current)
+	  context[:issue].assigned_to_id = User.current.id
+	end
+      end
     end
 
     nil

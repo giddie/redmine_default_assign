@@ -11,3 +11,6 @@ de:
   interactive_assignment: "Zuständigen interaktiv setzen"
   label_user: "Benutzer"
   none_selected: "<Keiner>"
+  self_assignment: "Assign 'self'"
+  self_assignment_explanation: >
+      Assign issue 'self' if no default assignee is selected.
