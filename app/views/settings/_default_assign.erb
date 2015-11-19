@@ -50,4 +50,20 @@
    <%= hidden_field_tag('settings[self_assignment]', false) %>
    <%= check_box_tag('settings[self_assignment]', true, self_assignment) %>
  </p>
+
+ <script>
+( function(){
+ var self_assign = $( "#settings_self_assignment[type=checkbox]" )[0];
+ var interactive = $( "#settings_interactive_assignment[type=checkbox]" )[0];
+ interactive.onchange = function( e ){
+    if( e.target.checked ){
+       self_assign.disabled = false;
+    } else {
+       self_assign.disabled = true;
+       self_assign.checked = false;
+    }
+ }
+ } )();
+  </script>
+
 </fieldset>
