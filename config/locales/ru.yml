@@ -12,9 +12,9 @@ ru:
   interactive_assignment: "Выбирать ответственного интерактивно"
   label_user: "Пользователь"
   none_selected: "<Пусто>"
-  self_assignment: "Assign issue author"
+  self_assignment: "Назначать задачу на автора"
   self_assignment_explanation: >
-    When a new issue is created with no assignee, and the project has no default
-    assignee set, tick the box below to assign the issue to the user who just
-    created the issue, if possible. If the box is left unticked, there will be
-    no assignee, which is the default behaviour in Redmine.
+    Если этот пунт выбран - при создании новой задачи, если не выбрано на кого
+    назначить задачу и если в проекте не выбрано на кого назначать по умолчанию,
+    то задача будет назначена на автора задачи. Если этот пункт не выбран
+    задача не будет ни на кого назначена - как сделано в Redmine по умолчанию.
