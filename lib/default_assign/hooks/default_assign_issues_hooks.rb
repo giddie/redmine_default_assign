@@ -7,7 +7,9 @@ class DefaultAssignIssueHook < Redmine::Hook::ViewListener
     interactive_assignment =
       Setting.plugin_redmine_default_assign['interactive_assignment'] || 'true'
     interactive_assignment = (interactive_assignment == 'true')
-    return  if !interactive_assignment || Setting.plugin_redmine_default_assign[:override_category_assignee] != 'true'
+    return  if !interactive_assignment
+    # if interactive_assignment is true don't do anything if 'override category assignee' is false
+    return if Setting.plugin_redmine_default_assign[:override_category_assignee] != 'true'
 
     if context[:project].default_assignee.blank?
       self_assignment =
