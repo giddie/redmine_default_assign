@@ -20,3 +20,6 @@ fr:
     si-dessous pour tentir l'assignement de l'auteur de la demande. Sans
     sélection, il n'y aura aucun assignement pour la demande, ce qui est le
     comportement normal de Redmine.
+  default_assign:
+    override_category_assignee_info: "Override Category Assignee"
+    override_category_assignee: "Override Category Assignee"
