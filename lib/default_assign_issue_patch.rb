@@ -8,7 +8,7 @@ module DefaultAssignIssuePatch
     base.class_eval do
       unloadable # Send unloadable so it will not be unloaded in development
 
-      before_save :assign_default_assignee
+      before_create :assign_default_assignee
     end
   end
 
