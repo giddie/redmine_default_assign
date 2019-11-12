@@ -9,7 +9,7 @@ require 'default_assign/hooks/default_assign_projects_hooks'
 require 'default_assign/hooks/default_assign_issues_hooks.rb'
 
 if Rails::VERSION::MAJOR >= 3
-  ActionDispatch::Callbacks.to_prepare do
+  ((Rails.version > "5")? ActiveSupport::Reloader : ActionDispatch::Callbacks).to_prepare do
     require_dependency 'project'
     require_dependency 'issue'
     Project.send(:include, DefaultAssignProjectPatch)
