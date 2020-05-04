@@ -1,4 +1,4 @@
-class AddDefaultAssigneeToProject < ActiveRecord::Migration
+class AddDefaultAssigneeToProject < ActiveRecord::Migration[4.2]
   def self.up
     # Work around migration name change (Github issue #27)
     old_num = '20090508035844'
